@@ -44,6 +44,9 @@ export default function PostsList() {
                 postsList.map((post) => (
                     <div className='postItem' key={post.id}>
                         <h2>{post.title}</h2>
+                        <img src={post.image} alt={post.title} />
+                        <p>{post.content}</p>
+                        <p>{post.tags.join(", ")}</p>
                         <button onClick={() => removePost(post.id)}>Cancella Post</button>
                     </div >
 
