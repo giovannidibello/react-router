@@ -1,6 +1,3 @@
-// importiamo componenti di template
-import Header from "./../components/Header";
-
 import { useState, useEffect } from 'react'
 import axios from "axios";
 
@@ -35,7 +32,7 @@ export default function PostsList() {
     return (
 
         <>
-            <Header />
+
             {postsList.length === 0 ? (
 
                 <h1>Non ci sono posts</h1>
