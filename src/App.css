@@ -30,6 +30,13 @@ nav ul {
   list-style: none;
 }
 
+/* active */
+
+.active {
+  background-color: aquamarine;
+  padding: 10px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
