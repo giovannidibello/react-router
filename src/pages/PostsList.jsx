@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from "axios";
 
+import { Link } from "react-router-dom";
+
 export default function PostsList() {
 
     const [postsList, setPostsList] = useState([]);
@@ -42,8 +44,8 @@ export default function PostsList() {
                     <div className='postItem' key={post.id}>
                         <h2>{post.title}</h2>
                         <img src={post.image} alt={post.title} />
-                        <p>{post.content}</p>
                         <p>{post.tags.join(", ")}</p>
+                        <Link to={`/posts/${post.id}`}>Vai al dettaglio</Link>
                         <button onClick={() => removePost(post.id)}>Cancella Post</button>
                     </div >
 

@@ -9,6 +9,7 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import PostsList from "./pages/PostsList";
+import PostDetailPage from "./pages/PostDetailPage";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/posts" element={<PostsList />} />
+          <Route path="/posts/:id" element={<PostDetailPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -37,6 +37,33 @@ nav ul {
   padding: 10px;
 }
 
+/* posts list*/
+
+.postItem {
+  border: 1px solid grey;
+}
+
+.postItem a {
+  display: block;
+  margin: 10px 0;
+  color: red;
+  cursor: pointer;
+}
+
+.postItem img {
+  width: 100%;
+}
+
+.postdetail img {
+  width: 100%;
+}
+
+/* button */
+
+button {
+  background-color: lightblue;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
