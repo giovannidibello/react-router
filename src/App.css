@@ -36,6 +36,38 @@ nav ul {
   list-style: none;
 }
 
+/* navbar dettaglio */
+
+.navdetail {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.navdetail a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: lightgreen;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navdetail a:hover {
+  background-color: #ddd;
+}
+
+.navdetail a:first-child {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.navdetail a:last-child {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
 /* active */
 
 .active {

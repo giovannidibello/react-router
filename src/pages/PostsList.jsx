@@ -17,6 +17,9 @@ export default function PostsList() {
     // chiamata funzione solo al primo rendering
     useEffect(fetchTodos, []);
 
+    // salvo la lunghezza dell'array dei posts
+    const totalPosts = postsList.length;
+
     // funzione rimozione post
     const removePost = (id) => {
         const updatedList = postsList.filter((post) => {
@@ -45,7 +48,7 @@ export default function PostsList() {
                         <h2>{post.title}</h2>
                         <img src={post.image} alt={post.title} />
                         <p>{post.tags.join(", ")}</p>
-                        <Link to={`/posts/${post.id}`}>Vai al dettaglio</Link>
+                        <Link to={`/posts/${post.id}`} state={{ totalPosts }}>Vai al dettaglio</Link>
                         <button onClick={() => removePost(post.id)}>Cancella Post</button>
                     </div >
 
