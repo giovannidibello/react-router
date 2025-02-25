@@ -20,6 +20,12 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* header */
+
+header {
+  width: 1000px;
+}
+
 /* navbar */
 
 nav ul {
